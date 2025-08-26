@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Commutative Property of Multiplication
 
-## Getting Started
+The **Commutative Property of Multiplication** interactive helps students see that changing the order of factors does not change the product. By experimenting with different numbers, students can visualize and confirm this fundamental math property.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔗 Live Interactive
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Try it out here:  
+👉 [https://content-interactives.github.io/Commutative-Property-of-Multiplication](https://content-interactives.github.io/Commutative-Property-of-Multiplication)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Where This Interactive Is Being Used
 
-## Learn More
+This interactive is currently featured in the following locations:
 
-To learn more about Next.js, take a look at the following resources:
+- <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/5d12571f-8e12-4441-98ab-c0bc94069a96" /> **CK-12 Intent Response**  
+  - 👉 PRODUCTION: PENDING  
+  - 👉 MASTER: PENDING  
+- 📘 **CK-12 Flexbooks**
+  - 👉 PENDING
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📚 Standards & Subjects
 
-## Deploy on Vercel
+This interactive aligns with the following topics and standards:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **📂 Subject Area**: Elementary / Middle School Math  
+- **🧮 Topic**: Properties of Multiplication  
+- **📏 Common Core**:  
+  - 3.OA.B.5 – Apply properties of operations as strategies to multiply and divide  
+  - 3.OA.A.1 – Interpret products of whole numbers
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Developer Notes
+
+- Built with: HTML, CSS, JavaScript  
+- Deployed via GitHub Pages
