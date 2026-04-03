@@ -1,41 +1,34 @@
 # Commutative Property of Multiplication
 
-The **Commutative Property of Multiplication** interactive helps students see that changing the order of factors does not change the product. By experimenting with different numbers, students can visualize and confirm this fundamental math property.
+Next.js 15 app (static export) demonstrating commutative multiplication with sliders and visual grouping. Production build uses `basePath` for GitHub Pages.
 
----
+**Live:** https://content-interactives.github.io/Commutative-Property-of-Multiplication/
 
-## 🔗 Live Interactive
+**Curriculum and standards:** [Standards.md](Standards.md)
 
-Try it out here:  
-👉 [https://content-interactives.github.io/Commutative-Property-of-Multiplication](https://content-interactives.github.io/Commutative-Property-of-Multiplication)
+## Stack
 
----
+- Next.js 15 (App Router), React 19, TypeScript
+- Tailwind CSS 4, Radix UI (`@radix-ui/react-slider`, `@radix-ui/react-alert-dialog`)
+- `class-variance-authority`, `clsx`, `tailwind-merge`, `lucide-react`, `tw-animate-css`
+- `output: 'export'` → static site in `out/`
+- `next.config.ts`: `basePath` is `/Commutative-Property-of-Multiplication` when `NODE_ENV === 'production'`; `images.unoptimized: true` for static export
 
-## 🌐 Where This Interactive Is Being Used
+## Scripts
 
-This interactive is currently featured in the following locations:
+| Command | Purpose |
+|--------|---------|
+| `npm run dev` | Next dev server |
+| `npm run build` | Static export to `out/` |
+| `npm run start` | Run production server locally (optional) |
+| `npm run lint` | `next lint` |
 
-- <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/5d12571f-8e12-4441-98ab-c0bc94069a96" /> **CK-12 Intent Response**  
-  - 👉 PRODUCTION: PENDING  
-  - 👉 MASTER: PENDING  
-- 📘 **CK-12 Flexbooks**
-  - 👉 PENDING
+## Deploy
 
----
+`.github/workflows/deploy.yml`: on push to `main`, runs `npm ci`, `npm run build`, deploys `out/` to `gh-pages` via JamesIves/github-pages-deploy-action.
 
-## 📚 Standards & Subjects
+## Entry points
 
-This interactive aligns with the following topics and standards:
-
-- **📂 Subject Area**: Elementary / Middle School Math  
-- **🧮 Topic**: Properties of Multiplication  
-- **📏 Common Core**:  
-  - 3.OA.B.5 – Apply properties of operations as strategies to multiply and divide  
-  - 3.OA.A.1 – Interpret products of whole numbers
-
----
-
-## 🛠️ Developer Notes
-
-- Built with: HTML, CSS, JavaScript  
-- Deployed via GitHub Pages
+- `src/app/page.tsx` — page shell
+- `src/components/interactive/CommutativePropertyInteractive.tsx` — interactive
+- Shared UI under `src/components/ui/`
